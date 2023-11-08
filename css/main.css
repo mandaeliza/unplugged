@@ -89,50 +89,93 @@ textarea {
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
+  margin: 50px 0;
 }
-/*------------------ BASE HEADER - FOOTER STYLES ------------------*/
 
-/*------------------ FOOTER STYLES ------------------*/
+/* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  flex-direction: column;
-  margin: 15px 0 0 0;
+  flex-flow: column wrap;
+  margin: 0;
 }
 
 .header-divider {
-  width: 60%;
-  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  margin-top: 10px 0 20px 0;
 }
 
 header nav {
   display: flex;
   justify-content: center;
   width: 60%;
-  margin: 20px 0 15px 0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  width: 100%;
   padding: 0;
-  width: 60%;
-  margin: 0;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* .footer-content h4 {
+  margin: 20px 0 20px 0;
+}
+
+footer p {
+  margin: 0;
+} */
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
-  margin: 50px 0 50px 0;
 }
+
+/* Aside */
 
 aside {
   display: flex;
@@ -148,34 +191,46 @@ aside p {
   margin-bottom: 30px;
 }
 
-aside input[type=text] {
-  width: 90%;
-  padding: 1em;
+.form {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+aside .form input[type=text] {
+  width: 100%;
+  padding: 1rem;
   margin-bottom: 20px;
 }
 
-aside input[type=button] {
+aside .form input[type=button] {
   width: 100%;
   padding: 20px 0 20px 0;
   margin-top: 20px;
 }
 
+/* Features */
+
 .features {
   display: flex;
   justify-content: center;
-  margin: 50px 0 50px 0;
 }
 
 .features h2 {
-  margin: 0 0 60px 0;
+  margin-bottom: 60px;
+}
+
+
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 .features p {
   margin: 0;
-}
-
-.features .features-items {
-  margin-bottom: 60px;
 }
 
 .features .features-item-details {
@@ -187,8 +242,9 @@ aside input[type=button] {
 }
 
 .features article {
-  width: 60%;
-  margin: 30px 0 30px 0;
+  width: 63%;
+  margin: 30px 0;
+  text-align: center;
 }
 
 .features .features-items {
@@ -197,19 +253,23 @@ aside input[type=button] {
   flex-flow: row wrap;
 }
 
+/* Reviews */
+
 .reviews {
   display: flex;
   justify-content: center;
-  margin: 50px 0 50px 0;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
 }
 .reviews h3 {
-  width: 50%;
-  margin: 20px 0 20px 0;
+  width: 55%;
+  margin: 20px 0;
 }
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
 .mission {
   display: flex;
@@ -221,20 +281,25 @@ aside input[type=button] {
   justify-content: center;
 }
 
-.footer-content {
+.contact-section p {
   margin: 0;
 }
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
 .faq {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   margin: 50px 0 0 0;
 }
 
@@ -243,7 +308,7 @@ aside input[type=button] {
 }
 
 .faq p {
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 }
 
 .map {
@@ -251,42 +316,7 @@ aside input[type=button] {
   justify-content: center;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
-footer .content-wrapper {
-  width: 55%;
-  margin-top: 50px;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.footer-content h4 {
-  margin: 20px 0 20px 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-.copyright {
-  margin: 20px 0 20px 0;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
