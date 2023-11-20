@@ -92,6 +92,11 @@ textarea {
   margin: 50px 0;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
@@ -405,15 +410,112 @@ aside .form input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/* Tablet styles here*/
+  .content-wrapper {
+    outline: 3px dotted purple;
+    max-width: 640px;
+    margin: 100px 0;
+  }
+/* Header */
+header {
+  padding: 33px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.header-divider {
+  display: none;
+}
+
+header .content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+header nav {
+  width: 20%
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+/* Aside */
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+aside .content-wrapper .form-details,
+aside .content-wrapper .form {
+  width: 40%;
+  margin: 0;
+}
+/* Features */
+.features article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: column wrap;
+  flex-basis: 50%;
+}
+
+.features .features-item-details {
+  width: 50%;
+}
+/* Reviews */
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+/* Footer */
+footer .content-wrapper {
+  width: 65%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.footer-content .contact .social {
+  margin-bottom: 0;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+/***** About Page *****/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.mission p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 75%;
+}
+
+.contact-content .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+}
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here*/
 }
 
 /* ==========================================================================
@@ -490,4 +592,3 @@ aside .form input[type=button] {
     page-break-after: avoid;
   }
 }
-
