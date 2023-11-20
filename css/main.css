@@ -91,9 +91,17 @@ textarea {
   width: 90%;
   margin: 50px 0;
 }
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 
 h2 {
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 
@@ -440,6 +448,10 @@ header nav {
 header nav ul {
   justify-content: space-between;
 }
+/* Hero */
+.hero-area h1 {
+width: 80%;
+}
 /* Aside */
 aside .content-wrapper {
   margin: 50px 0;
@@ -447,13 +459,23 @@ aside .content-wrapper {
   justify-content: space-between;
   align-content: flex-start;
 }
-
-aside .content-wrapper .form-details,
-aside .content-wrapper .form {
-  width: 40%;
+aside h3 {
   margin: 0;
 }
+.form-description {
+  margin: 0;
+  padding-right: 5%;
+}
+
+.form {
+  margin: 0;
+  padding-left: 5%;
+}
 /* Features */
+.features h2 {
+  margin-bottom: 20px;
+}
+
 .features article {
   display: flex;
   justify-content: center;
@@ -462,13 +484,20 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-details {
-  width: 50%;
+  width: 60%;
 }
 /* Reviews */
+.reviews h2 {
+  width: 80%;
+}
 .reviews article {
   display: flex;
   justify-content: space-between;
 }
+.reviews article div {
+  width: 49%;
+}
+
 /* Footer */
 footer .content-wrapper {
   width: 65%;
@@ -481,7 +510,8 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
-.footer-content .contact .social {
+.footer-content .contact,
+.footer-content .social {
   margin-bottom: 0;
 }
 
@@ -498,24 +528,45 @@ footer .copyright {
   padding-top: 20px;
 }
 
+.mission h2 {
+  margin: 0px;
+}
 .mission p {
-  width: 45%;
+  width: 44%;
 }
 
-.contact-section .content-wrapper h2 {
-  width: 75%;
+.map {
+  height: 350px;
 }
 
-.contact-content .content-wrapper {
+.contact-section .content-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-section h2 {
+  width: 75%;
+  margin: 0;
+}
+.contact-content {
+  display: flex;
+  width: 100%;
+}
+
+.contact-content div {
+  width: 49%;
 }
 
 
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here*/
+  .content-wrapper {
+    outline: 3px dotted green;
+    min-width: 1200px;
+    margin: 100px 0;
+  }
 }
 
 /* ==========================================================================
