@@ -100,6 +100,8 @@ body {
 ul, 
 ol {
   list-style: none;
+  color: #e2e3ed;
+  text-transform: uppercase;
 }
  
 a {
@@ -107,10 +109,14 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #527158;
+}
+
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
-  /* line-height: 2.6875; */
   margin: 0;
   font-weight: 500;
 }
@@ -124,23 +130,23 @@ h2 {
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   font-size: 1.125em;
 }
  
 p {
   font-size: .875em;
-  line-height: 1.125;
+  line-height: 18px;
 }
  
-/* img {
- 
+img {
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
-  */
+ 
 address {
  font-style: normal;
 }
@@ -156,6 +162,10 @@ header {
   justify-content: center;
   padding: 15px 0;
   background-color: #202322;
+}
+
+header figure {
+  width: 60%;
 }
 
 header .content-wrapper {
@@ -180,7 +190,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   padding: 0;
   font-size: 1.125em;
@@ -236,7 +246,7 @@ footer p {
 .hero-area {
   display: flex;
   justify-content: center;
-    background-image: url(../img/unplugged-retreat.jpg);
+    background: url(../img/unplugged-retreat.jpg) center no-repeat #333;
     background-size: cover;
     color: #e2e3ed;
     height: 600px;
@@ -305,7 +315,7 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  background-image: url(../img/unplugged-retreat-features.jpg);
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
   background-size: cover;
   color: #e2e3ed;
 }
@@ -351,16 +361,24 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
-  line-height: 1.875;
+  line-height: 30px;
 }
 
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
+.reviews article div h3 {
+  margin: 0;
+}
+
+.reviews article div {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  margin-top: 20px;
 }
 /* ==========================================================================
    About Page
@@ -418,7 +436,7 @@ input[type=button] {
 }
 
 .faq h4 {
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .faq .faq-items {
@@ -523,13 +541,18 @@ input[type=button] {
     margin: 100px 0;
   }
 /* Global Styles Tablet */
-/* h1 {
+h1 {
   font-size: 3em;
-  line-height: 3em;
-} */
+  line-height: 48px;
+}
+
 /* Header */
 header {
   padding: 33px 0;
+}
+
+header figure {
+  width: 30%;
 }
 
 .header-divider {
@@ -552,7 +575,7 @@ header nav ul {
 }
 /* Hero */
 .hero-area h1 {
-width: 80%;
+width: 90%;
 }
 
 /* Aside */
@@ -602,10 +625,10 @@ aside h3 {
   display: flex;
   justify-content: space-between;
 }
-.reviews article div {
-  width: 49%;
-}
 
+.reviews article div {
+  margin: 0 0 0 10%;
+}
 /* Footer */
 footer .content-wrapper {
   width: 90%;
@@ -676,7 +699,6 @@ footer .copyright {
 
 .faq article {
   display: flex;
-  justify-content: space-between;
   flex-flow: column wrap;
   flex-basis: 50%;
 }
@@ -693,7 +715,21 @@ footer .copyright {
     max-width: 960px;
     margin: 100px 0;
   }
-
+/* Global Desktop Styles */
+h1 {
+  font-size: 3.75em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3,
+h4 {
+  font-size: 1.875em;
+}
+p {
+  font-size: 1.125em;
+  line-height: 24px;
+}
   /* Header */
 header {
   padding: 15px 0;
@@ -701,7 +737,7 @@ header {
 
 /* Hero */
 .hero-area h1 {
-  width: 60%;
+  width: 70%;
   }
 
 /* Aside */
@@ -726,20 +762,23 @@ aside .content-wrapper .form {
 /* Reviews */
 .reviews h2 {
   margin-bottom: 50px;
-}
-
-.reviews article div {
-  width: 42%;
+  width: 80%;
 }
 
 /* About */
 .mission h2 {
   width: 90%;
+  font-size: 3em;
 }
 
 /* FAQ */
 .faq h2 {
   width: 100%;
+  font-size: 3em;
+}
+.faq h4 {
+  font-size: 1.125em;
+  line-height: 18px;
 }
 
 
