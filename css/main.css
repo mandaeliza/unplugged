@@ -150,9 +150,6 @@ address {
   width: 90%;
   margin: 50px 0;
 }
-
-
-
 /* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
@@ -270,7 +267,28 @@ aside .form input[type=button] {
   padding: 20px 0 20px 0;
   margin-top: 20px;
 }
-
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* Features */
 
 .features {
