@@ -10,13 +10,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.2;
-}
-
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -89,53 +87,62 @@ textarea {
    /* General Styles */
  
 html {
-	
+	color: #222;
+  font-size: 1rem;
 }
  
 body {
+  font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
  
 ul, 
 ol {
- 
+  list-style: none;
 }
  
 a {
-	
+	color: #e2e3ed;
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  /* line-height: 2.6875; */
   margin: 0;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
-h3 {
-  font-size: 1.5em;
-}
-
+h3,
 h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
   font-size: 1.125em;
 }
  
 p {
-	
+  font-size: .875em;
+  line-height: 1.285;
 }
  
-img {
+/* img {
  
 }
  
 figure {
  
 }
- 
+  */
 address {
- 
+ font-style: normal;
 }
  
 .content-wrapper {
@@ -176,9 +183,10 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   width: 100%;
   padding: 0;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 footer {
@@ -469,6 +477,11 @@ aside .form input[type=button] {
     max-width: 640px;
     margin: 100px 0;
   }
+/* Global Styles Tablet */
+/* h1 {
+  font-size: 3em;
+  line-height: 3em;
+} */
 /* Header */
 header {
   padding: 33px 0;
@@ -509,12 +522,12 @@ aside h3 {
 }
 .form-description {
   margin: 0;
-  padding-right: 5%;
+  padding-right: 10%;
 }
 
 .form {
   margin: 0;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 /* Features */
