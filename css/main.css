@@ -130,7 +130,7 @@ h4 {
  
 p {
   font-size: .875em;
-  line-height: 1.285;
+  line-height: 1.125;
 }
  
 /* img {
@@ -155,6 +155,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -191,6 +192,8 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 footer .content-wrapper {
@@ -211,6 +214,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -232,14 +236,19 @@ footer p {
 .hero-area {
   display: flex;
   justify-content: center;
+    background-image: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    color: #e2e3ed;
+    height: 600px;
 }
 
 /* Aside */
-
 aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 aside h3 {
@@ -273,6 +282,8 @@ input[type=text] {
   width: 100%;
   color: #2a423a;
   font-style: italic;
+  font-size: 1.124em;
+  font-weight: 500;
   padding: 1em;
 }
  
@@ -294,6 +305,9 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background-image: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  color: #e2e3ed;
 }
 
 .features h2 {
@@ -317,6 +331,7 @@ input[type=button] {
 
 .features .font-awesome-icon {
   margin-bottom: 40px;
+  height: 3.75em;
 }
 
 .features article {
@@ -340,7 +355,9 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1.875;
 }
+
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
@@ -352,6 +369,8 @@ input[type=button] {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .map {
@@ -362,6 +381,8 @@ input[type=button] {
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 .contact-section p {
@@ -376,6 +397,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   margin: 0;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .faq .content-wrapper {
@@ -392,6 +415,10 @@ input[type=button] {
 
 .faq p {
   margin: 0 0 50px 0;
+}
+
+.faq h4 {
+  line-height: 1.5;
 }
 
 .faq .faq-items {
@@ -536,8 +563,9 @@ aside .content-wrapper {
   align-content: flex-start;
 }
 aside h3 {
-  margin: 0;
+  margin: 0 0 30px 0;
 }
+
 .form-description {
   margin: 0;
   padding-right: 10%;
@@ -563,6 +591,10 @@ aside h3 {
   width: 60%;
 }
 /* Reviews */
+.reviews {
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
 .reviews h2 {
   width: 70%;
 }
