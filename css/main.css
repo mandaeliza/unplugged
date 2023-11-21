@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 /*
@@ -86,27 +86,64 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* General Styles */
+ 
+html {
+	
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+ul, 
+ol {
+ 
+}
+ 
+a {
+	
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+ 
+p {
+	
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ 
+}
+ 
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
   margin: 50px 0;
 }
-h1 {
-  font-size: 3rem;
-  margin: 0;
-}
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-/* h4 {
-  font-size: 1.125rem;
-} */
 
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -496,7 +533,7 @@ aside h3 {
 }
 /* Reviews */
 .reviews h2 {
-  width: 80%;
+  width: 70%;
 }
 .reviews article {
   display: flex;
@@ -614,9 +651,6 @@ aside .content-wrapper .form {
   width: 30%;
 }
 
-aside h3 {
-  font-size: 2.125rem;
-}
 /* Features */
 .features h2 {
  width: 85%;
@@ -637,7 +671,7 @@ aside h3 {
 
 /* About */
 .mission h2 {
-  width: 65%;
+  width: 90%;
 }
 
 /* FAQ */
