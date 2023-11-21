@@ -557,6 +557,7 @@ footer .copyright {
   width: 75%;
   margin: 0;
 }
+
 .contact-content {
   display: flex;
   width: 100%;
@@ -635,6 +636,10 @@ footer .content-wrapper {
   width: 100%;
 }
 
+.contact-section h2 {
+  width: 60%;
+  margin: 0;
+}
 }
 
 /* ==========================================================================
