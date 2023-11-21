@@ -104,6 +104,10 @@ h3 {
   font-size: 2rem;
 }
 
+/* h4 {
+  font-size: 1.125rem;
+} */
+
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 header {
@@ -233,8 +237,6 @@ aside .form input[type=button] {
   margin-bottom: 60px;
 }
 
-
-
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -289,6 +291,11 @@ aside .form input[type=button] {
   justify-content: center;
 }
 
+.map {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
@@ -324,11 +331,11 @@ aside .form input[type=button] {
   margin: 0 0 50px 0;
 }
 
-.map {
+.faq .faq-items {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -479,7 +486,6 @@ aside h3 {
 .features article {
   display: flex;
   justify-content: center;
-  flex-wrap: column wrap;
   flex-basis: 50%;
 }
 
@@ -558,7 +564,24 @@ footer .copyright {
   width: 49%;
 }
 
+/***** FAQ Page *****/
+.faq .faq-items {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
+.faq article {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+.faq-answer {
+  width: 90%;
+
+}
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here*/
