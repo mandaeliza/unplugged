@@ -605,12 +605,13 @@ header {
   }
 
 /* Aside */
-.form-description {
-  padding: 0 10%;
+aside .content-wrapper {
+  justify-content: space-around;
 }
 
-.form {
-  padding: 0 10%;
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 30%;
 }
 
 aside h3 {
@@ -622,8 +623,6 @@ aside h3 {
 }
 
 .features article {
-  display: flex;
-  justify-content: center;
   flex-basis: 33%;
 }
 
@@ -631,6 +630,23 @@ aside h3 {
 .reviews h2 {
   margin-bottom: 50px;
 }
+
+.reviews article div {
+  width: 42%;
+}
+
+/* About */
+.mission h2 {
+  width: 65%;
+}
+
+/* FAQ */
+.faq h2 {
+  width: 100%;
+}
+
+
+/* Footer */
 
 footer .content-wrapper {
   width: 100%;
