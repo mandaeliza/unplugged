@@ -132,8 +132,9 @@ h2 {
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  /* margin: 20px 0; */
+  margin: 20px 0;
   font-size: 1.125em;
+  
 }
  
 p {
@@ -154,7 +155,7 @@ address {
 }
  
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 }
@@ -180,8 +181,8 @@ header .content-wrapper {
 
 .header-divider {
   width: 100%;
-  height: 1px;
-  margin-top: 10px 0 20px 0;
+  border-top: 1px solid #3a3a3a;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -192,11 +193,11 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 0;
   font-size: 1.125em;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 footer {
@@ -215,7 +216,6 @@ footer .content-wrapper {
 footer .contact {
   margin-bottom: 50px;
 }
-
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -230,6 +230,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 footer .social-icons p i {
@@ -364,7 +365,7 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;
-  background-color: #527158;
+  background-color: #2a423a;
   color: #e2e3ed;
 }
 
@@ -554,7 +555,7 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
 /* Tablet styles here*/
   .content-wrapper {
-    outline: 3px dotted purple;
+    /* outline: 3px dotted purple; */
     max-width: 640px;
     margin: 100px 0;
   }
@@ -562,6 +563,16 @@ input[type=button] {
 h1 {
   font-size: 3em;
   line-height: 48px;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 30px;
 }
 
 /* Header */
@@ -625,11 +636,14 @@ aside h3 {
 .features article {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 50%;
 }
 
 .features .features-item-details {
   width: 60%;
+  justify-content: flex-start;
 }
 /* Reviews */
 .reviews {
@@ -648,13 +662,17 @@ aside h3 {
   margin: 0 0 0 10%;
 }
 /* Footer */
+
+footer h4 {
+  font-size: 1.5em;
+}
 footer .content-wrapper {
   width: 90%;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   flex-flow: row wrap;
 }
@@ -675,7 +693,6 @@ footer p {
 footer .social-icons {
   width: 12.5em;
   justify-content: space-between;
-}
 
 /***** About Page *****/
 
@@ -718,6 +735,12 @@ footer .social-icons {
 }
 
 /***** FAQ Page *****/
+.faq h4,
+.faq p {
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
 .faq .faq-items {
   display: flex;
   justify-content: center;
@@ -732,13 +755,12 @@ footer .social-icons {
 
 .faq-answer {
   width: 90%;
-
 }
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here*/
   .content-wrapper {
-    outline: 3px dotted green;
+    /* outline: 3px dotted green; */
     max-width: 960px;
     margin: 100px 0;
   }
@@ -898,4 +920,5 @@ footer .content-wrapper {
   h3 {
     page-break-after: avoid;
   }
+}
 }
