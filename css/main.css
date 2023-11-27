@@ -94,14 +94,16 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
   text-align: left;
 }
  
 ul, 
 ol {
-  list-style: none;
-  color: #e2e3ed;
+  list-style-type: none;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -248,8 +250,9 @@ footer p {
   justify-content: center;
     background: url(../img/unplugged-retreat.jpg) center no-repeat #333;
     background-size: cover;
-    color: #e2e3ed;
-    height: 600px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Aside */
@@ -258,7 +261,6 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #527158;
-  color: #e2e3ed;
 }
 
 aside h3 {
@@ -273,18 +275,6 @@ aside p {
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
-}
-
-aside .form input[type=text] {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 20px;
-}
-
-aside .form input[type=button] {
-  width: 100%;
-  padding: 20px 0 20px 0;
-  margin-top: 20px;
 }
  
 input[type=text] {
